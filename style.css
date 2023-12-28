@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  /* background: linear-gradient(to left bottom, lightgreen, lightblue); */
+
+  animation: scrollBackground 6s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace; */
+/* Keep the rest of the properties unchanged */
+/* 
+  animation: scrollBackground 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+} */
+
+/* body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  animation: scrollBackground 10s ease-in-out infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+} */
+
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  width: 75%;
+  margin: 10px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+  text-decoration: underline;
+}
+
+.quote {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.author {
+  font-size: 25px;
+  margin: 10px;
+  font-style: italic;
+}
+
+.btn {
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgba(185, 141, 141, 0.422);
+  border-color: rgba(238, 184, 184, 0.6);
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease-in-out;
+  color: rgb(39, 25, 44);
+}
